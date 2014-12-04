@@ -1,0 +1,72 @@
+<div class="pagewrapper clearfix">
+<h1><b>How Bum Chic Are You?</b></h1>
+
+<form name="quiz" class="quiz">
+	<ol>
+		<li><h3>What is your favorite color?<br></h3></li>
+		<input type="radio" name="a1" value="4" ng-model="q1"> Robin Egg Blue.<br>
+		<input type="radio" name="a1" value="1" ng-model="q1"> Lava Red.<br>
+		<input type="radio" name="a1" value="2" ng-model="q1"> Army Green.<br>
+		<input type="radio" name="a1" value="3" ng-model="q1"> Mellow Yellow.<br><br>
+		<p ng-show="!q1 && showError">Yo! Please answer Question 1</p>
+
+		<li><h3>How do you like your coffee?<br></h3></li>
+		<input type="radio" name="a2" value="1" ng-model="q2"> I don't drink coffee.<br>
+		<input type="radio" name="a2" value="3" ng-model="q2"> Orange Mocha Frappuccino!<br>
+		<input type="radio" name="a2" value="4" ng-model="q2"> Black.<br>
+		<input type="radio" name="a2" value="2" ng-model="q2"> Cream and sugar.<br><br>
+		<p ng-show="!q2 && showError">Yo! Please answer Question 2</p>
+
+		<li><h3>How often do you shower?<br></h3></li>
+		<input type="radio" name="a3" value="4" ng-model="q3"> Every day.<br>
+		<input type="radio" name="a3" value="3" ng-model="q3"> Every other day.<br>
+		<input type="radio" name="a3" value="1" ng-model="q3"> Once a week.<br>
+		<input type="radio" name="a3" value="2" ng-model="q3"> Three times a week.<br><br>
+		<p ng-show="!q3 && showError">Yo! Please answer Question 3</p>
+
+		<li><h3>If you have a beard, what's the status?<br></h3></li>
+		<input type="radio" name="a4" value="3" ng-model="q4"> Pretty decent but a little patchy.<br>
+		<input type="radio" name="a4" value="4" ng-model="q4"> Full Lumber Jack Action.<br>
+		<input type="radio" name="a4" value="2" ng-model="q4"> Got a pretty good five o'clock shadow going on.<br>
+		<input type="radio" name="a4" value="1" ng-model="q4"> Can't grow one and it makes you cry.<br><br>
+		<p ng-show="!q4 && showError">Yo! Please answer Question 4</p>
+
+		<li><h3>It is snowing mad crazy outside! As you dash out of the house, you grab...?<br></h3></li>
+		<input type="radio" name="a5" value="1" ng-model="q5"> A cardigan.<br>
+		<input type="radio" name="a5" value="2" ng-model="q5"> Your favorite ratted hoddie.<br>
+		<input type="radio" name="a5" value="3" ng-model="q5"> Some name brand that keeps you toasty warm.<br>
+		<input type="radio" name="a5" value="4" ng-model="q5"> A sweet heavy coat you got from a grandparent.<br><br>
+		<p ng-show="!q5 && showError">Yo! Please answer Question 5</p>
+
+		<li><h3>Do you own a pair of fingerless gloves?<br></h3></li>
+		<input type="radio" name="a6" value="3" ng-model="q6"> I made my own pair of fingerless gloves.<br>
+		<input type="radio" name="a6" value="2" ng-model="q6"> Yes, and I wear them all the time.<br>
+		<input type="radio" name="a6" value="4" ng-model="q6"> Yes, and they have a mitten fold up for extra warmth.<br>
+		<input type="radio" name="a6" value="1" ng-model="q6"> No, but I will go get some right now!<br><br>
+		<p ng-show="!q6 && showError">Yo! Please answer Question 6</p>
+	</ol>
+
+	<button type="button" ng-click="submitQuiz()" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg">Submit</button>
+	<button type="button" ng-click="reset()" class="btn btn-danger btn-lg">Reset</button>
+	<a ng-href="#/home" class="btn btn-info btn-lg">Home</a>
+</form>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your final result:</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" onclick="window.location.href='https://twitter.com/login'" class="btn btn-primary">Share on Twitter</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

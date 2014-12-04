@@ -1,0 +1,118 @@
+.modal-body img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+html, body {
+	background: url("/images/bumwall.jpg") no-repeat center center fixed;
+/*	background-position: bottom right;*/
+	background-size: cover;
+/*	background-repeat: no-repeat;*/
+	height: 100%;
+	width: 100%;
+}
+
+.home {
+	/*position: absolute;*/
+	padding-top: 200px;
+	text-align: center;
+
+}
+
+.home h1 {
+	font-size: 70px;
+	color: #8B1A1A;
+}
+
+.home a {
+	margin-top: 30px;
+}
+.home button {
+	margin-top: 10px;
+}
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+	color: #8B1A1A;
+}
+
+ol {
+	font-size: 1.5em;
+	color: #EEE9E9;
+}
+
+h3 {
+	font-size: 21px;
+	color: #EEE9E9;
+}
+
+span {
+	color: #19a4e5;
+}
+
+.quiz ol p {
+	color: #8B1A1A;
+	font-size: 1.5em;
+}
+
+.btn-primary {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.btn-danger {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.btn-info {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.pagewrapper {
+	/*position: absolute;*/
+	/*height: 100%;
+	width:100%;*/
+	background-color: hsla(0, 0%, 20%, 0.48);
+}
+
+.page-quiz.ng-enter {
+	-webkit-animation: slideInRight 1s both ease-in;
+	animation: slideInRight 1s both ease-in;
+}
+
+
+.page-quiz.ng-leave {
+	-webkit-animation: slideOutLeft 1s both ease-in;
+	animation: slideOutLeft 1s both ease-in;
+}
+
+@-webkit-keyframes slideInRight {
+	from { -webkit-transform: translateX(100%); }
+	to   { -webkit-transform: translateX(0); }
+}
+@keyframes slideInRight {
+	from { transform: translateX(100%); }
+	to   { transform: translateX(0); }
+}
+
+@-webkit-keyframes slideOutLeft {
+	to 		{ -webkit-transform: translateX(-100%); }
+}
+@keyframes slideOutLeft {
+	to 		{ transform: translateX(-100%); }
+}
+
+.ng-enter {
+	-webkit-animation: slideInRight 1s both ease-in;
+	animation: slideInRight 1s both ease-in;
+	z-index: 8888;
+}
+.ng-leave {
+	-webkit-animation: slideOutLeft 1s both ease-in;
+	animation: slideOutLeft 1s both ease-out;
+	z-index: 9999;
+}
